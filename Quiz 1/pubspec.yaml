@@ -1,0 +1,79 @@
+# ============================================================
+#  pubspec.yaml — Flutter Project Configuration
+#  Project : Dice Roller
+#  Student : Nabeel
+#  Quiz 1  : Simple Dice App
+# ============================================================
+
+name: dice_roller
+description: >
+  A beautiful simple dice rolling app built with Flutter.
+  Uses setState() to update the dice image on every roll.
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# App version shown on stores
+version: 1.0.0+1
+
+# ─── Dart / Flutter SDK Constraints ──────────────────────────
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# ─── Dependencies ─────────────────────────────────────────────
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Material icons (cupertino_icons provides iOS-style icons)
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lint rules that follow Flutter best practices
+  flutter_lints: ^3.0.0
+
+# ─── Flutter Section ──────────────────────────────────────────
+flutter:
+  uses-material-design: true   # Enables Material icons
+
+  # ── Image Assets ──────────────────────────────────────────
+  # Dice face images — one PNG per face value.
+  # Files must be placed in:  assets/images/
+  # File names must be exactly:  1.png  2.png  3.png  4.png  5.png  6.png
+  #
+  # When setState() is called with a new _diceValue,
+  # Image.asset('assets/images/$_diceValue.png') automatically
+  # loads the correct image from this list.
+  assets:
+    - assets/images/1.png          # Dice face showing 1 pip
+    - assets/images/2.png          # Dice face showing 2 pips
+    - assets/images/3.png          # Dice face showing 3 pips
+    - assets/images/4.png          # Dice face showing 4 pips
+    - assets/images/5.png          # Dice face showing 5 pips
+    - assets/images/6.png          # Dice face showing 6 pips
+    - assets/images/app_icon.png   # App icon used in the splash/about
+
+  # ── Custom Font: Poppins ───────────────────────────────────
+  # Download Poppins from https://fonts.google.com/specimen/Poppins
+  # Place the .ttf files in:  assets/fonts/
+  #
+  # Files needed:
+  #   assets/fonts/Poppins-Regular.ttf
+  #   assets/fonts/Poppins-SemiBold.ttf
+  #   assets/fonts/Poppins-Bold.ttf
+  fonts:
+    - family: Poppins
+      fonts:
+        # weight 400 — body text, hint messages, history label
+        - asset: assets/fonts/Poppins-Regular.ttf
+
+        # weight 600 — badges, button label, history numbers
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+
+        # weight 700 — app title, large number display
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
