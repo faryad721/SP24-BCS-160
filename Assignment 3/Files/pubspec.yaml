@@ -1,0 +1,18 @@
+name: nabeel_bmi
+description: A stylish BMI Calculator built with pure Flutter — unique slide & tap inputs, multi-unit support and animated result page.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
