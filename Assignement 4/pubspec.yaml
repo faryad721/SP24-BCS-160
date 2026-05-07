@@ -1,0 +1,25 @@
+name: skycast_weather
+description: A stylish frosted glass weather application.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  intl: ^0.18.1
+  location: ^5.0.3
+  google_fonts: ^6.1.0
+  glassmorphism: ^3.0.0
+  lucide_icons: ^0.257.0
+  fl_chart: ^0.66.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
